@@ -6,3 +6,4 @@
 !/defaultconfigs/**
 !/kubejs/
 !/kubejs/**
+.probe
