@@ -30,6 +30,9 @@ BlockEvents.rightClicked(event => {
         const stack = Item.of(drop.item, drop.count)
         const entity = player.drop(stack, false)
         if (entity) {
+          entity.motionX = 0
+          entity.motionY = 0
+          entity.motionZ = 0
           entity.setNoPickUpDelay()
         }
       }
