@@ -100,4 +100,7 @@ Custom content via KubeJS 7+. Resource namespace: `cellabo`. See AGENTS.md for f
 
 ## 许可证 / License
 
-All rights reserved.
+This work is licensed under CC BY-NC-SA 4.0.
+See the LICENSE file for details.
+
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</a>
