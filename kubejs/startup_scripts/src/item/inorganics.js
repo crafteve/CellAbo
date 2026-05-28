@@ -14,11 +14,11 @@ const inorganics = [
 
 StartupEvents.registry('item', event => {
     inorganics.forEach(io => {
-        event.create(`inorganic_${io.id}`)
+        event.create(`cellabo:inorganic_${io.id}`)
             .displayName(io.name)
             .tooltip(`§e${io.formula}`)
-            .texture('layer0', 'kubejs:item/ion_0') 
-            .texture('layer1', 'kubejs:item/ion_1')
+            .texture('layer0', 'cellabo:item/ion_0') 
+            .texture('layer1', 'cellabo:item/ion_1')
             .color(0, io.color)
             .tag('c:inorganic_molecules'); // 统一无机物 Tag
     });

@@ -34,11 +34,11 @@ const aminoAcids = [
   
 StartupEvents.registry('item', event => {
   aminoAcids.forEach(aa => {
-    event.create(`amino_acid_${aa.id}`)
+    event.create(`cellabo:amino_acid_${aa.id}`)
       .displayName(aa.name)
       .tooltip(`§e${aa.formula}`) 
-      .texture('layer0', 'kubejs:item/amino_acids_0')
-      .texture('layer1', 'kubejs:item/amino_acids_1')
+      .texture('layer0', 'cellabo:item/amino_acids_0')
+      .texture('layer1', 'cellabo:item/amino_acids_1')
       .color(0, aa.color)
       .tag('c:amino_acids'); 
   });

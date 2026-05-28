@@ -7,11 +7,11 @@ const nucleotides = [
 
 StartupEvents.registry('item', event => {
     nucleotides.forEach(nt => {
-        event.create(`nucleotide_${nt.id}`)
+        event.create(`cellabo:nucleotide_${nt.id}`)
             .displayName(nt.name)
             .tooltip(`§e${nt.formula}`)
-            .texture('layer0', 'kubejs:item/nucleotide_0') 
-            .texture('layer1', 'kubejs:item/nucleotide_1')
+            .texture('layer0', 'cellabo:item/nucleotide_0') 
+            .texture('layer1', 'cellabo:item/nucleotide_1')
             .color(0, nt.color) 
             .tag('c:nucleotides') // 统一打上核苷酸 Tag
     });

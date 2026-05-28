@@ -1,5 +1,7 @@
 /*
 !.gitignore
+!AGENTS.md
+!README.md
 !/config/
 !/config/**
 !/defaultconfigs/
