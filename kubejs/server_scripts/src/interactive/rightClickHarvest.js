@@ -6,7 +6,11 @@ function registerRightClickHarvest(config) {
 
 BlockEvents.rightClicked(event => {
   const { player, hand, block, item } = event
-  if (hand !== 'main_hand') return
+
+  if (hand !== 'main_hand') {
+    player.tell('§e[rightClickHarvest] 被副手触发，跳过: ' + hand)
+    return
+  }
 
   for (const recipe of rightClickHarvestRecipes) {
     if (!matchesBlock(recipe.block, block)) continue
@@ -28,13 +32,13 @@ BlockEvents.rightClicked(event => {
     for (const drop of recipe.drops) {
       if (Math.random() * 100 < drop.weight) {
         const stack = Item.of(drop.item, drop.count)
-        const entity = player.drop(stack, false)
-        if (entity) {
-          entity.motionX = 0
-          entity.motionY = 0
-          entity.motionZ = 0
-          entity.setNoPickUpDelay()
-        }
+        const entity = player.level.createEntity('minecraft:item')
+        entity.x = player.x
+        entity.y = player.y + 0.5
+        entity.z = player.z
+        entity.setItem(stack)
+        entity.setNoPickUpDelay()
+        entity.spawn()
       }
     }
   }

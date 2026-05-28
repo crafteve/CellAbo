@@ -1,5 +1,7 @@
 [
   {"version":1},
+  {"ingredient":{"id":"minecraft:stripped_spruce_wood"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:oak_log"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"cellabo:amino_acid_asparagine"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"compactmachines:wall"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"compactmachines:solid_wall"},"type":"item_stack","bookmarkType":"INGREDIENT"},
