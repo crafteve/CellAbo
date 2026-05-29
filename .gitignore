@@ -9,4 +9,7 @@
 !/defaultconfigs/**
 !/kubejs/
 !/kubejs/**
+!/scripts/
+!/scripts/**
+scripts/*.class
 .probe
