@@ -36,7 +36,6 @@ AI 必须严格遵守，禁止跳过规范、修改项目结构或越权操作�
 - `./config/**`
 - `./kubejs/**`
 - `./defaultconfigs/**`
-- `./scripts/**`
 - `./.gitignore`
 - `./README.md`
 
