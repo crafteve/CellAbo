@@ -23,12 +23,18 @@
     {
       "type": "custommachinery:item",
       "id": "cof_out",
-      "mode": "output"
+      "mode": "output",
+      "config": {
+        "default": "output"
+      }
     },
     {
       "type": "custommachinery:item",
       "id": "product",
-      "mode": "output"
+      "mode": "output",
+      "config": {
+        "default": "output"
+      }
     },
     {
       "type": "custommachinery:item",

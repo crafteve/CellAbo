@@ -13,12 +13,18 @@
     {
       "type": "custommachinery:item",
       "id": "product1",
-      "mode": "output"
+      "mode": "output",
+      "config": {
+        "default": "output"
+      }
     },
     {
       "type": "custommachinery:item",
       "id": "product2",
-      "mode": "output"
+      "mode": "output",
+      "config": {
+        "default": "output"
+      }
     },
     {
       "type": "custommachinery:item",

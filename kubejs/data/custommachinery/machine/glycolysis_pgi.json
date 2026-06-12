@@ -13,7 +13,10 @@
     {
       "type": "custommachinery:item",
       "id": "product",
-      "mode": "output"
+      "mode": "output",
+      "config": {
+        "default": "output"
+      }
     },
     {
       "type": "custommachinery:item",
