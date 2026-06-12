@@ -1,10 +1,6 @@
 {
-  "name": { "text": "磷酸果糖激酶 (PFK)" },
-  "appearance": {
-    "running": {
-      "custommachinery:light": 10
-    }
-  },
+  "name": { "text": { "translate": "磷酸果糖激酶 (PFK)" } },
+  "appearance": { "running": { "custommachinery:light": 10 } },
   "components": [
     { "type": "custommachinery:item", "id": "substrate", "mode": "input" },
     { "type": "custommachinery:item", "id": "cof_in",    "mode": "input" },
@@ -12,34 +8,24 @@
     { "type": "custommachinery:item", "id": "cof_out",   "mode": "output" }
   ],
   "gui": [
-    { "type": "custommachinery:background", "width": 200, "height": 150 },
+    { "type": "custommachinery:background",       "width": 200, "height": 150 },
     { "type": "custommachinery:player_inventory", "x": 19, "y": 67 },
+    { "type": "custommachinery:progress",         "x": 81, "y": 33, "width": 30, "height": 12 },
+    { "type": "custommachinery:config",           "x": 176, "y": 4 },
+    { "type": "custommachinery:status",           "x": 3, "y": 3 },
 
-    { "type": "custommachinery:text", "x": 50, "y": 6,
-      "text": { "text": "磷酸果糖激酶", "color": "dark_gray" } },
-    { "type": "custommachinery:text", "x": 28, "y": 6,
-      "text": { "text": "F6P → F1,6BP", "color": "gray" } },
-
-    { "type": "custommachinery:progress", "x": 86, "y": 24, "width": 26, "height": 8 },
+    { "type": "custommachinery:text", "x": 56, "y": 6,
+      "text": { "text": { "translate": "磷酸果糖激酶" }, "color": "dark_gray" } },
 
     { "type": "custommachinery:slot", "id": "substrate", "x": 38, "y": 20 },
     { "type": "custommachinery:slot", "id": "product",   "x": 138, "y": 20 },
+    { "type": "custommachinery:slot", "id": "cof_in",    "x": 38, "y": 44 },
+    { "type": "custommachinery:slot", "id": "cof_out",   "x": 138, "y": 44 },
 
-    { "type": "custommachinery:text", "x": 80, "y": 26,
-      "text": { "text": "↗", "color": "gray" } },
-    { "type": "custommachinery:text", "x": 124, "y": 26,
-      "text": { "text": "↘", "color": "gray" } },
-
-    { "type": "custommachinery:slot", "id": "cof_in",  "x": 56, "y": 45 },
-    { "type": "custommachinery:slot", "id": "cof_out", "x": 138, "y": 45 },
-
-    { "type": "custommachinery:text", "x": 38, "y": 43,
-      "text": { "text": "ATP", "color": "gray" } },
-    { "type": "custommachinery:text", "x": 126, "y": 43,
-      "text": { "text": "ADP", "color": "gray" } },
-
-    { "type": "custommachinery:config", "x": 176, "y": 4 },
-    { "type": "custommachinery:status", "x": 3, "y": 3 }
+    { "type": "custommachinery:text", "x": 39, "y": 50, "width": 17,
+      "text": { "text": { "translate": "ATP" }, "color": "gray" } },
+    { "type": "custommachinery:text", "x": 139, "y": 50, "width": 17,
+      "text": { "text": { "translate": "ADP" }, "color": "gray" } }
   ],
   "processor": { "type": "custommachinery:craft" }
 }

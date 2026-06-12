@@ -1,32 +1,24 @@
 {
-  "name": { "text": "醛缩酶 (Aldolase)" },
-  "appearance": {
-    "running": {
-      "custommachinery:light": 10
-    }
-  },
+  "name": { "text": { "translate": "醛缩酶 (Aldolase)" } },
+  "appearance": { "running": { "custommachinery:light": 10 } },
   "components": [
     { "type": "custommachinery:item", "id": "substrate", "mode": "input" },
     { "type": "custommachinery:item", "id": "product1",  "mode": "output" },
     { "type": "custommachinery:item", "id": "product2",  "mode": "output" }
   ],
   "gui": [
-    { "type": "custommachinery:background", "width": 200, "height": 150 },
+    { "type": "custommachinery:background",       "width": 200, "height": 150 },
     { "type": "custommachinery:player_inventory", "x": 19, "y": 67 },
+    { "type": "custommachinery:progress",         "x": 81, "y": 33, "width": 30, "height": 12 },
+    { "type": "custommachinery:config",           "x": 176, "y": 4 },
+    { "type": "custommachinery:status",           "x": 3, "y": 3 },
 
-    { "type": "custommachinery:text", "x": 68, "y": 6,
-      "text": { "text": "醛缩酶", "color": "dark_gray" } },
-    { "type": "custommachinery:text", "x": 24, "y": 6,
-      "text": { "text": "F1,6BP → DHAP + G3P", "color": "gray" } },
+    { "type": "custommachinery:text", "x": 56, "y": 6,
+      "text": { "text": { "translate": "醛缩酶" }, "color": "dark_gray" } },
 
-    { "type": "custommachinery:progress", "x": 86, "y": 24, "width": 26, "height": 8 },
-
-    { "type": "custommachinery:slot", "id": "substrate", "x": 30, "y": 20 },
-    { "type": "custommachinery:slot", "id": "product1",  "x": 130, "y": 15 },
-    { "type": "custommachinery:slot", "id": "product2",  "x": 130, "y": 36 },
-
-    { "type": "custommachinery:config", "x": 176, "y": 4 },
-    { "type": "custommachinery:status", "x": 3, "y": 3 }
+    { "type": "custommachinery:slot", "id": "substrate", "x": 38, "y": 24 },
+    { "type": "custommachinery:slot", "id": "product1",  "x": 138, "y": 16 },
+    { "type": "custommachinery:slot", "id": "product2",  "x": 138, "y": 38 }
   ],
   "processor": { "type": "custommachinery:craft" }
 }
