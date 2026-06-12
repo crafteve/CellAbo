@@ -57,7 +57,7 @@
       "x": 81,
       "y": 33,
       "width": 30,
-      "height": 12
+      "height": 13
     },
     {
       "type": "custommachinery:slot",
@@ -142,8 +142,5 @@
         "color": "gray"
       }
     }
-  ],
-  "processor": {
-    "type": "custommachinery:craft"
-  }
+  ]
 }

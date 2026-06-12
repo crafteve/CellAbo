@@ -1,31 +1,122 @@
 {
-  "name": { "text": { "translate": "己糖激酶 (Hexokinase)" } },
-  "appearance": { "running": { "custommachinery:light": 10 } },
+  "name": {
+    "text": {
+      "translate": "己糖激酶 (Hexokinase)"
+    }
+  },
+  "appearance": {
+    "running": {
+      "custommachinery:light": 10
+    }
+  },
   "components": [
-    { "type": "custommachinery:item", "id": "substrate", "mode": "input" },
-    { "type": "custommachinery:item", "id": "cof_in",    "mode": "input" },
-    { "type": "custommachinery:item", "id": "product",   "mode": "output" },
-    { "type": "custommachinery:item", "id": "cof_out",   "mode": "output" }
+    {
+      "type": "custommachinery:item",
+      "id": "cof_in",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "cof_out",
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "product",
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "substrate",
+      "mode": "input"
+    }
   ],
   "gui": [
-    { "type": "custommachinery:background",       "width": 200, "height": 150 },
-    { "type": "custommachinery:player_inventory", "x": 19, "y": 67 },
-    { "type": "custommachinery:progress",         "x": 81, "y": 33, "width": 30, "height": 12 },
-    { "type": "custommachinery:config",           "x": 176, "y": 4 },
-    { "type": "custommachinery:status",           "x": 3, "y": 3 },
-
-    { "type": "custommachinery:text", "x": 56, "y": 6,
-      "text": { "text": { "translate": "己糖激酶" }, "color": "dark_gray" } },
-
-    { "type": "custommachinery:slot", "id": "substrate", "x": 38, "y": 20 },
-    { "type": "custommachinery:slot", "id": "product",   "x": 138, "y": 20 },
-    { "type": "custommachinery:slot", "id": "cof_in",    "x": 38, "y": 44 },
-    { "type": "custommachinery:slot", "id": "cof_out",   "x": 138, "y": 44 },
-
-    { "type": "custommachinery:text", "x": 39, "y": 50, "width": 17,
-      "text": { "text": { "translate": "ATP" }, "color": "gray" } },
-    { "type": "custommachinery:text", "x": 139, "y": 50, "width": 17,
-      "text": { "text": { "translate": "ADP" }, "color": "gray" } }
-  ],
-  "processor": { "type": "custommachinery:craft" }
+    {
+      "type": "custommachinery:background",
+      "width": 200,
+      "height": 150
+    },
+    {
+      "type": "custommachinery:config",
+      "x": 176,
+      "y": 4
+    },
+    {
+      "type": "custommachinery:player_inventory",
+      "x": 19,
+      "y": 67
+    },
+    {
+      "type": "custommachinery:progress",
+      "x": 81,
+      "y": 32,
+      "width": 30,
+      "height": 13
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "cof_in",
+      "x": 38,
+      "y": 44
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "cof_out",
+      "x": 138,
+      "y": 44
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "product",
+      "x": 138,
+      "y": 20
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "substrate",
+      "x": 38,
+      "y": 20
+    },
+    {
+      "type": "custommachinery:status",
+      "x": 3,
+      "y": 3
+    },
+    {
+      "type": "custommachinery:text",
+      "x": 56,
+      "y": 6,
+      "text": {
+        "text": {
+          "translate": "己糖激酶"
+        },
+        "color": "dark_gray"
+      }
+    },
+    {
+      "type": "custommachinery:text",
+      "x": 39,
+      "y": 50,
+      "width": 17,
+      "text": {
+        "text": {
+          "translate": "ATP"
+        },
+        "color": "gray"
+      }
+    },
+    {
+      "type": "custommachinery:text",
+      "x": 139,
+      "y": 50,
+      "width": 17,
+      "text": {
+        "text": {
+          "translate": "ADP"
+        },
+        "color": "gray"
+      }
+    }
+  ]
 }

@@ -72,8 +72,5 @@
         "color": "dark_gray"
       }
     }
-  ],
-  "processor": {
-    "type": "custommachinery:craft"
-  }
+  ]
 }
