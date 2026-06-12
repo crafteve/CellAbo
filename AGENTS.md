@@ -67,6 +67,11 @@ startup_scripts：允许物品/方块/流体注册、自定义机器注册、Cre
 - 按功能划分子目录（如 `src/item/` 存放物品注册脚本）
 - 允许在 `src` 中注册 event，但必须遵守模块化原则
 
+**交互合成系统**  
+- 交互合成（右键/左键方块触发掉落、合成等）放在 `server_scripts/src/interactive/` 下
+- 一个文件对应一类交互行为（如 `rightClickHarvest.js` 仅处理右键掉落）
+- 提供注册函数（如 `registerRightClickHarvest()`）供配方定义调用，事件全局只注册一次
+
 **严格禁止**  
 - 同一文件中重复定义同一 event
 - 创建 test event 或随机命名的文件
@@ -120,6 +125,11 @@ server_scripts/src/recipes/cellabo/
 - **Tag 优先**：优先使用 `item/fluid tag`，减少硬编码具体物品
 - **调试日志**：开发完成后必须删除所有 `console.log()`，或使用 `DEBUG` 开关控制，禁止在正式版遗留
 - **幂等性**：脚本必须支持重复加载
+
+**已知 KubeJS API 注意事项**  
+- `BlockEvents.rightClicked` 的 `event.hand` 返回小写字符串 `'main_hand'` / `'off_hand'`
+- 实体掉落物控制优先使用 `player.drop(stack, false)`，避免额外操作（motion/pickupDelay），以免出现不一致
+- ProbeJS 生成的 `.d.ts` 是确认 API 可用性的首选依据（位于 `.probe/packages/generated-package/`）
 
 ## 七、资源规范
 
