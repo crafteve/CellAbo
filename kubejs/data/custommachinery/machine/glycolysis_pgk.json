@@ -1,0 +1,45 @@
+{
+  "name": { "text": "磷酸甘油酸激酶 (PGK)" },
+  "appearance": {
+    "running": {
+      "custommachinery:light": 10
+    }
+  },
+  "components": [
+    { "type": "custommachinery:item", "id": "substrate", "mode": "input" },
+    { "type": "custommachinery:item", "id": "cof_in",    "mode": "input" },
+    { "type": "custommachinery:item", "id": "product",   "mode": "output" },
+    { "type": "custommachinery:item", "id": "cof_out",   "mode": "output" }
+  ],
+  "gui": [
+    { "type": "custommachinery:background", "width": 200, "height": 150 },
+    { "type": "custommachinery:player_inventory", "x": 19, "y": 67 },
+
+    { "type": "custommachinery:text", "x": 42, "y": 6,
+      "text": { "text": "磷酸甘油酸激酶", "color": "dark_gray" } },
+    { "type": "custommachinery:text", "x": 26, "y": 6,
+      "text": { "text": "1,3BPG → 3PG", "color": "gray" } },
+
+    { "type": "custommachinery:progress", "x": 86, "y": 24, "width": 26, "height": 8 },
+
+    { "type": "custommachinery:slot", "id": "substrate", "x": 38, "y": 20 },
+    { "type": "custommachinery:slot", "id": "product",   "x": 138, "y": 20 },
+
+    { "type": "custommachinery:text", "x": 80, "y": 26,
+      "text": { "text": "↗", "color": "gray" } },
+    { "type": "custommachinery:text", "x": 124, "y": 26,
+      "text": { "text": "↘", "color": "gray" } },
+
+    { "type": "custommachinery:slot", "id": "cof_in",  "x": 56, "y": 45 },
+    { "type": "custommachinery:slot", "id": "cof_out", "x": 138, "y": 45 },
+
+    { "type": "custommachinery:text", "x": 36, "y": 43,
+      "text": { "text": "ADP", "color": "gray" } },
+    { "type": "custommachinery:text", "x": 128, "y": 43,
+      "text": { "text": "ATP", "color": "gray" } },
+
+    { "type": "custommachinery:config", "x": 176, "y": 4 },
+    { "type": "custommachinery:status", "x": 3, "y": 3 }
+  ],
+  "processor": { "type": "custommachinery:craft" }
+}

@@ -1,0 +1,49 @@
+{
+  "name": { "text": "甘油醛-3-磷酸脱氢酶 (GAPDH)" },
+  "appearance": {
+    "running": {
+      "custommachinery:light": 10
+    }
+  },
+  "components": [
+    { "type": "custommachinery:item", "id": "substrate", "mode": "input" },
+    { "type": "custommachinery:item", "id": "cof_in1",   "mode": "input" },
+    { "type": "custommachinery:item", "id": "cof_in2",   "mode": "input" },
+    { "type": "custommachinery:item", "id": "product",   "mode": "output" },
+    { "type": "custommachinery:item", "id": "cof_out",   "mode": "output" }
+  ],
+  "gui": [
+    { "type": "custommachinery:background", "width": 200, "height": 150 },
+    { "type": "custommachinery:player_inventory", "x": 19, "y": 67 },
+
+    { "type": "custommachinery:text", "x": 26, "y": 6,
+      "text": { "text": "甘油醛-3-磷酸脱氢酶", "color": "dark_gray" } },
+    { "type": "custommachinery:text", "x": 24, "y": 6,
+      "text": { "text": "G3P → 1,3BPG", "color": "gray" } },
+
+    { "type": "custommachinery:progress", "x": 86, "y": 24, "width": 26, "height": 8 },
+
+    { "type": "custommachinery:slot", "id": "substrate", "x": 38, "y": 20 },
+    { "type": "custommachinery:slot", "id": "product",   "x": 138, "y": 20 },
+
+    { "type": "custommachinery:text", "x": 80, "y": 26,
+      "text": { "text": "↗", "color": "gray" } },
+    { "type": "custommachinery:text", "x": 124, "y": 26,
+      "text": { "text": "↘", "color": "gray" } },
+
+    { "type": "custommachinery:slot", "id": "cof_in1", "x": 38, "y": 45 },
+    { "type": "custommachinery:slot", "id": "cof_in2", "x": 60, "y": 45 },
+    { "type": "custommachinery:slot", "id": "cof_out", "x": 138, "y": 45 },
+
+    { "type": "custommachinery:text", "x": 26, "y": 43,
+      "text": { "text": "NAD+", "color": "gray" } },
+    { "type": "custommachinery:text", "x": 48, "y": 43,
+      "text": { "text": "Pi", "color": "gray" } },
+    { "type": "custommachinery:text", "x": 120, "y": 43,
+      "text": { "text": "NADH", "color": "gray" } },
+
+    { "type": "custommachinery:config", "x": 176, "y": 4 },
+    { "type": "custommachinery:status", "x": 3, "y": 3 }
+  ],
+  "processor": { "type": "custommachinery:craft" }
+}
